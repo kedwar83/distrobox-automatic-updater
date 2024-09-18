@@ -1,0 +1,12 @@
+[Unit]
+Description=Distrobox Update Service
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/distrobox-update.sh
+Restart=always
+User=YOUR_USERNAME
+
+[Install]
+WantedBy=multi-user.target
+

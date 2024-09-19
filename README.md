@@ -13,7 +13,7 @@ This service automatically runs `distrobox-upgrade --all` once a day to keep all
 1. Create the service file:
 
    ```bash
-   sudo nano /etc/systemd/system/distrobox-upgrade.service
+   sudo vim /etc/systemd/system/distrobox-upgrade.service
    ```
 
    Copy and paste the following content:
@@ -37,7 +37,7 @@ This service automatically runs `distrobox-upgrade --all` once a day to keep all
 2. Create the timer file:
 
    ```bash
-   sudo nano /etc/systemd/system/distrobox-upgrade.timer
+   sudo vim /etc/systemd/system/distrobox-upgrade.timer
    ```
 
    Copy and paste the following content:
@@ -118,11 +118,3 @@ To remove the service:
    ```bash
    sudo systemctl daemon-reload
    ```
-
-## Contributing
-
-Feel free to open issues or submit pull requests if you have suggestions for improvements or encounter any problems.
-
-## License
-
-This project is open source and available under the [MIT License](https://opensource.org/licenses/MIT).

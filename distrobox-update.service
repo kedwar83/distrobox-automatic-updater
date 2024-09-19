@@ -1,12 +1,11 @@
 [Unit]
-Description=Distrobox Update Service
+Description=Distrobox Upgrade Service
 After=network.target
 
 [Service]
-ExecStart=/usr/local/bin/distrobox-update.sh
-Restart=always
-User=YOUR_USERNAME
+Type=oneshot
+ExecStart=/usr/bin/distrobox-upgrade --all
+User=your_username
 
 [Install]
 WantedBy=multi-user.target
-
